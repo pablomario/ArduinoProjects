@@ -66,7 +66,7 @@ void programa3(){
  
  
 void programa4(){
-  for(int j =0; j<3;j++){
+  for(int j =0; j<6;j++){
       for(int i=1; i<3;i++){
         digitalWrite(1,HIGH);
         digitalWrite(2,HIGH);
