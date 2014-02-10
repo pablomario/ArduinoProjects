@@ -71,17 +71,19 @@ void loop(){
           cliente.println();
           //Página Web en HTML
           
-cliente.print("<!DOCTYPE html><html><head><title>DomoCasa - Bytelchus</title></head><body style='margin:0; padding:0;'><header style='background: url(http://bytelchus.com/wp-content/uploads/2014/01/bg-main-block-short.jpg); margin: 0 auto 20px auto;'><center><img src='http://bytelchus.com/wp-content/uploads/2014/01/cropped-logo1.png'></center></header><article style='margin: 0 auto; width: 90%; text-aling: center;'><section>Estado del <span style='font-weight: bold;'>ENTRADA:");
+cliente.print("<!DOCTYPE html><html><head><title>DomoCasa - Bytelchus</title></head><body style='margin:0; padding:0;'><header style='background: url(http://bytelchus.com/wp-content/uploads/2014/01/bg-main-block-short.jpg); margin: 0 auto 20px auto;'><center><img src='http://bytelchus.com/wp-content/uploads/2014/01/cropped-logo1.png'></center></header><article style='margin: 0 auto; width: 90%; text-aling: center;'>");
+
+cliente.print("<section>Luz de la <span style='font-weight: bold;'>ENTRADA:");
 cliente.print(stateE);
-cliente.print("</span><br><br><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=ET\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=EF\'></section>");
+cliente.print("</span><br><br><center><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=ET\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=EF\'></center></section>");
 
-cliente.print("<section><hr/> Estado del <span style='font-weight: bold;'>SALON: ");
+cliente.print("<section><hr/> Luz del <span style='font-weight: bold;'>SALON: ");
 cliente.print(stateS);
-cliente.print("</span><br><br><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=ST\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=SF\'></section>");
+cliente.print("</span><br><br><center><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=ST\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=SF\'></center></section>");
 
-cliente.print("<section><hr/>Estado del <span style='font-weight: bold;'>PASILLO: ");
+cliente.print("<section><hr/>Luz del <span style='font-weight: bold;'>PASILLO: ");
 cliente.print(stateP);
-cliente.print("</span><br><br><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=PT\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=PF\'></section></article></body></html>");
+cliente.print("</span><br><br><center><input type=submit value=OFF style=width:200px;height:75px onClick=location.href='./?LEC=PT\'><input type=submit value=ON style=width:200px;height:75px onClick=location.href='./?LEC=PF\'></center></section></article></body></html>");
      
     cliente.stop();//Cierro conexión con el cliente
           readString="";
